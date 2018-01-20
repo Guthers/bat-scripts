@@ -1,6 +1,11 @@
 @ECHO OFF
 SETLOCAL ENABLEDELAYEDEXPANSION
 
+REM This script is designed to be used with the dnd 5e stat roll table
+REM the actions the following script emulates are. Rolling 4d6 then
+REM dropping the lowest. For peace of mind this script prints all
+REM of the 'dice' rolls
+
 REM Roll Loop
 for /L %%i in (1,1,6) do (
 	for /L %%j in (1,1,4) do (
